@@ -5,7 +5,7 @@ public class CoveringSegments {
     public static List<Integer> optimalPoints(Segment[] segments) {
         Arrays.sort(segments, (o1, o2) -> Integer.compare(o1.end, o2.end));
 
-        
+
         int point = -1;
         List<Integer> points = new ArrayList<>();
         for (Segment segment : segments) {
